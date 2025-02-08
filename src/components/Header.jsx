@@ -23,7 +23,11 @@ const Header = () => {
               onClick={() => setNavOpen((prev) => !prev)}
             >
               {/* <IoMenu /> */}
-              {navOpen ? <IoClose /> : <IoMenu />}
+              {navOpen ? (
+                <IoClose className='icon' />
+              ) : (
+                <IoMenu className='icon' />
+              )}
             </button>
             <Navbar navOpen={navOpen} />
           </div>
