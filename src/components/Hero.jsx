@@ -1,4 +1,8 @@
+// Desc: Home Page Hero Section Component of the Portfolio Website.
 import React from 'react';
+
+// Component
+import { ButtonOutline, ButtonPrimary } from './Button';
 
 const Hero = () => {
   return (
@@ -29,12 +33,14 @@ const Hero = () => {
             </h2>
 
             <div className='flex items-center gap-3'>
-              ButtonPrimary ButtonOutline
+              <ButtonPrimary label='Download CV ' icon={'download'} />
+              <ButtonOutline label='Scroll Down' icon={'arrow-down'} />
             </div>
           </div>
 
           <div className='hidden lg:block'>
-            <figure className='w-full max-h-[450px] max-w-[480px]ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-60% rounded-[60px] overflow-hidden'>
+            {/* <figure className='w-full max-h-[450px] max-w-[480px]ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-60% rounded-[60px] overflow-hidden'> */}
+            <figure className='w-full max-h-[450px] max-w-[480px]ml-auto bg-gradient-to-t from-emerald-400 via-25% via-emerald-400/40 to-60% rounded-[60px] overflow-hidden'>
               <img
                 src='./images/hero_banner2.png'
                 alt='Kuntal Ojha'

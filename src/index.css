@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  @apply bg-zinc-900 text-zinc-50;
+  /* @apply bg-zinc-900 text-zinc-50; */
+  @apply bg-zinc-900 text-emerald-100;
 }
 
 /* -------------------------------------------------- */
@@ -80,4 +81,23 @@ body {
 
 .btn-secondary {
   @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
+}
+
+.btn .cv {
+  @apply text-[18px];
+}
+
+.btn:has(.cv) {
+  /* @apply flex-row-reverse; */
+  @apply pr-3;
+}
+
+.btn-primary {
+  /* @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400; */
+  @apply h-11 bg-emerald-500 text-zinc-950 hover:bg-emerald-400 active:bg-emerald-500;
+}
+
+.btn-outline{
+  /* @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800; */
+  @apply h-11 bg-zinc-900 text-zinc-50 hover:bg-zinc-800 active:bg-zinc-900;
 }
