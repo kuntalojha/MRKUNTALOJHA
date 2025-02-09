@@ -29,7 +29,8 @@ const Hero = () => {
               </div>
             </div>
             <h2 className='headline-1 max-w[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10'>
-              Building Scalable Modern Websites for the Future
+              {/* Building Scalable Modern Websites for the Future */}
+              Building Scalable & Impactful Web Solutions with MERN Stack
             </h2>
 
             <div className='flex items-center gap-3'>
@@ -42,7 +43,7 @@ const Hero = () => {
             {/* <figure className='w-full max-h-[450px] max-w-[480px]ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-60% rounded-[60px] overflow-hidden'> */}
             <figure className='w-full max-h-[450px] max-w-[480px]ml-auto bg-gradient-to-t from-emerald-400 via-25% via-emerald-400/40 to-60% rounded-[60px] overflow-hidden'>
               <img
-                src='./images/hero_banner2.png'
+                src='./images/hero_banner.png'
                 alt='Kuntal Ojha'
                 className='w-full'
                 width={656}
