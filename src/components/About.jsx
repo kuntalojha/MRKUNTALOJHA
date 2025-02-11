@@ -18,15 +18,17 @@ const About = () => {
         <div className='container'>
           <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12 '>
             <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]'>
-              A passionate full-stack web developer specializing in the MERN
-              stack and proficient in JavaScript, HTML, and CSS. Experienced in
-              building scalable web applications, integrating APIs, and
-              optimizing performance. Currently pursuing an M.Tech in Computer
-              Science & Engineering and working as an Assistant Professor at
-              JBIET, Hyderabad, teaching Data Structures (DS). I conduct
-              lectures, mentor students, and guide them in practical
-              problem-solving. Fluent in English, Bengali, and Hindi, I am keen
-              on contributing to web development and academic research.
+              I am a passionate Full-Stack MERN Developer and an Assistant
+              Professor at B Institute of Engineering and
+              Technology(JBIET),Hyderabad, where I teach Data Structures. With
+              an M.Tech in Computer Science, I specialize in building scalable
+              web applications and open-source projects. As a Campus Captain at
+              Coding Minutes, I mentor students and organize tech webinars. My
+              expertise includes JavaScript, React, Node.js, and MongoDB, with
+              hands-on experience in developing robust applications like a
+              Restaurant Management System and an npm package, KnowIndia. I am
+              always eager to collaborate on innovative projects and contribute
+              to the developer community.
             </p>
 
             <div className='flex flex-wrap items-center gap-4 md:gap-8'>
