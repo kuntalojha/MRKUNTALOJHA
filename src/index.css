@@ -52,11 +52,13 @@ body {
   @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
 }
 
-.headline-2{
+.headline-2 {
   @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
 }
 
-
+.title-1 {
+  @apply text-[22px] font-normal;
+}
 /* Menu btn */
 .menu-btn {
   @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95;

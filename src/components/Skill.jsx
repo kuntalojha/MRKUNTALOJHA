@@ -14,9 +14,19 @@ const skillItem = [
     desc: 'User Interface',
   },
   {
+    imgSrc: './images/tailwindcss.svg',
+    label: 'TailwindCSS',
+    desc: 'User Interface',
+  },
+  {
     imgSrc: './images/javascript.svg',
     label: 'JavaScript',
     desc: 'Interaction',
+  },
+  {
+    imgSrc: './images/react.svg',
+    label: 'React',
+    desc: 'Framework',
   },
   {
     imgSrc: './images/nodejs.svg',
@@ -33,16 +43,6 @@ const skillItem = [
     label: 'MongoDB',
     desc: 'Database',
   },
-  {
-    imgSrc: './images/react.svg',
-    label: 'React',
-    desc: 'Framework',
-  },
-  {
-    imgSrc: './images/tailwindcss.svg',
-    label: 'TailwindCSS',
-    desc: 'User Interface',
-  },
 ];
 
 const Skill = () => {
@@ -58,12 +58,7 @@ const Skill = () => {
 
           <div className='grid gap-4 grid-cols-[repeat(auto-fill,_minmax(250px,1fr))] '>
             {skillItem.map(({ imgSrc, label, desc }, Key) => (
-              <SkillCard
-              key={Key}
-               imgSrc={imgSrc}
-                label={label}
-                desc={desc}
-               />
+              <SkillCard key={Key} imgSrc={imgSrc} label={label} desc={desc} />
             ))}
           </div>
         </div>
