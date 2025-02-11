@@ -36,7 +36,7 @@ const works = [
     imgSrc: './images/project_6.png',
     title: 'slangs npm package',
     tags: ['Node.js', 'JavaScript', 'npm', 'Git', 'GitHub'],
-    projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio',
+    projectLink: 'https://www.npmjs.com/package/slangs',
   },
 ];
 
