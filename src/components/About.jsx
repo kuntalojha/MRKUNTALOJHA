@@ -19,7 +19,7 @@ const About = () => {
           <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12 '>
             <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]'>
               I am a passionate Full-Stack MERN Developer and an Assistant
-              Professor at B Institute of Engineering and
+              Professor at JB Institute of Engineering and
               Technology(JBIET),Hyderabad, where I teach Data Structures. With
               an M.Tech in Computer Science, I specialize in building scalable
               web applications and open-source projects. As a Campus Captain at
