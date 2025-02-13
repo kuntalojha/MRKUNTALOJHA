@@ -86,7 +86,7 @@ body {
 }
 
 .navbar .active-box {
-  @apply absolute top-2 left-2 right-2 h-9 bg-zinc-50 rounded-lg 
+  @apply absolute top-2 left-2 right-2 h-9 bg-emerald-50 rounded-lg 
   -z-10 transition-[top,left] duration-500;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .btn-secondary {
-  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
+  @apply bg-emerald-50 text-zinc-900 active:bg-zinc-50/80;
 }
 
 .btn .cv {
