@@ -10,8 +10,6 @@ ratings.fill({
   },
 });
 
-console.log(ratings);
-
 const ReviewCard = ({ content, name, imgSrc, company, classes }) => {
   return (
     <div

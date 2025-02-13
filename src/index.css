@@ -36,6 +36,10 @@ body {
 .section {
   @apply pt-20 lg:pt-32;
 }
+.reveal-up{
+  @apply translate-y-20 opacity-0; 
+}
+
 
 /* COMPONENTS */
 
