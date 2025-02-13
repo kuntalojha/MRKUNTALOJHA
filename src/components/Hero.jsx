@@ -16,7 +16,7 @@ const Hero = () => {
   // Function to handle CV download
   const handleDownloadCV = () => {
     // Open the CV file in a new tab
-    window.open('.test.pdf', '_blank');
+    window.open('/MRKUNTALOJHA/test.pdf', '_blank');
   };
 
   // Function to handle scroll down to 'About' section
