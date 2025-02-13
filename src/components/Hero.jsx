@@ -3,6 +3,8 @@ import React from 'react';
 
 // Component
 import { ButtonOutline, ButtonPrimary } from './Button';
+import { IoMdDownload } from 'react-icons/io';
+import { IoArrowDownOutline } from 'react-icons/io5';
 
 const Hero = () => {
   return (
@@ -34,8 +36,14 @@ const Hero = () => {
             </h2>
 
             <div className='flex items-center gap-3'>
-              <ButtonPrimary label='Download CV ' icon={'download'} />
-              <ButtonOutline label='Scroll Down' icon={'arrow-down'} />
+              {/* <ButtonPrimary label='Download CV ' icon={'download'} />
+              <ButtonOutline label='Scroll Down' icon={'arrow-down'} /> */}
+
+              <ButtonPrimary label='Download CV' icon={<IoMdDownload />} />
+              <ButtonOutline
+                label='Scroll Down'
+                icon={<IoArrowDownOutline />}
+              />
             </div>
           </div>
 
