@@ -7,17 +7,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //Primary Button
-const ButtonPrimary = ({ href, target = '_self', label, icon, classes }) => {
+const ButtonPrimary = ({
+  href,
+  target = '_self',
+  label,
+  icon,
+  classes,
+  onClick,
+}) => {
   if (href) {
     return (
-      <a href={href} target={target} className={'btn btn-primary ' + classes}>
+      <a
+        href={href}
+        target={target}
+        className={'btn btn-primary ' + classes}
+        onClick={onClick}
+      >
         {label}
         {icon && <span className='icon'>{icon}</span>}
       </a>
     );
   } else {
     return (
-      <button className={'btn btn-primary ' + classes}>
+      <button className={'btn btn-primary ' + classes} onClick={onClick}>
         {label}
         {icon && <span className='icon cv'>{icon}</span>}
       </button>
@@ -31,20 +43,33 @@ ButtonPrimary.propTypes = {
   target: PropTypes.string,
   icon: PropTypes.node,
   classes: PropTypes.string,
+  onClick: PropTypes.func, // onClick prop type
 };
 
 //Outline Button
-const ButtonOutline = ({ href, target = '_self', label, icon, classes }) => {
+const ButtonOutline = ({
+  href,
+  target = '_self',
+  label,
+  icon,
+  classes,
+  onClick,
+}) => {
   if (href) {
     return (
-      <a href={href} target={target} className={'btn btn-outline ' + classes}>
+      <a
+        href={href}
+        target={target}
+        className={'btn btn-outline ' + classes}
+        onClick={onClick}
+      >
         {label}
         {icon && <span className='icon'>{icon}</span>}
       </a>
     );
   } else {
     return (
-      <button className={'btn btn-outline ' + classes}>
+      <button className={'btn btn-outline ' + classes} onClick={onClick}>
         {label}
         {icon && <span className='icon'>{icon}</span>}
       </button>
@@ -58,6 +83,6 @@ ButtonOutline.propTypes = {
   target: PropTypes.string,
   icon: PropTypes.node,
   classes: PropTypes.string,
+  onClick: PropTypes.func, // onClick prop type
 };
-
 export { ButtonPrimary, ButtonOutline };

@@ -13,6 +13,20 @@ import { IoMdDownload } from 'react-icons/io';
 import { IoArrowDownOutline } from 'react-icons/io5';
 
 const Hero = () => {
+  // Function to handle CV download
+  const handleDownloadCV = () => {
+    // Open the CV file in a new tab
+    window.open('.test.pdf', '_blank');
+  };
+
+  // Function to handle scroll down to 'About' section
+  const handleScrollDown = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <section id='home' className=' pt-28 lg:pt-36'>
@@ -41,10 +55,15 @@ const Hero = () => {
             </h2>
 
             <div className='flex items-center gap-3'>
-              <ButtonPrimary label='Download CV' icon={<IoMdDownload />} />
+              <ButtonPrimary
+                label='Download CV'
+                icon={<IoMdDownload />}
+                onClick={handleDownloadCV}
+              />
               <ButtonOutline
                 label='Scroll Down'
                 icon={<IoArrowDownOutline />}
+                onClick={handleScrollDown}
               />
             </div>
           </div>
