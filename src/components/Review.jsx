@@ -1,7 +1,12 @@
+// Review.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
 import ReviewCard from './ReviewCard';
 
-import { ReactLenis } from 'lenis/react';
+// Register GSAP
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -9,6 +14,7 @@ import { useGSAP } from '@gsap/react';
 // Register GSAP plugins
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+// Reviews
 const reviews = [
   {
     content:
@@ -53,6 +59,7 @@ const reviews = [
     company: 'Skyline Digital',
   },
 ];
+
 const Review = () => {
   useGSAP(() => {
     gsap.to('.scrub-slide', {

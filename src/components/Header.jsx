@@ -1,9 +1,16 @@
+// Header.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React, { useState } from 'react';
-// Icons
-import { IoMenu, IoClose } from 'react-icons/io5';
 
 // Component
 import Navbar from './Navbar';
+
+// React Icons
+import { IoMenu, IoClose } from 'react-icons/io5';
+
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
@@ -22,7 +29,6 @@ const Header = () => {
               className='menu-btn md:hidden'
               onClick={() => setNavOpen((prev) => !prev)}
             >
-              {/* <IoMenu /> */}
               {navOpen ? (
                 <IoClose className='icon' />
               ) : (

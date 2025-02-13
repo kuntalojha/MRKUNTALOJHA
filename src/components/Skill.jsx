@@ -1,7 +1,14 @@
+// Skill.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
+
 // Component
 import SkillCard from './SkillCard';
 
+// Skill Items
 const skillItem = [
   {
     imgSrc: './images/html.svg',

@@ -1,6 +1,12 @@
+// ProjectCard.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// React Icons
 import { HiOutlineArrowUpRight } from 'react-icons/hi2';
 
 const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {

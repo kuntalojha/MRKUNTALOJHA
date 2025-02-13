@@ -1,6 +1,14 @@
+// Work.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
+
+// Component
 import ProjectCard from './ProjectCard';
 
+// Project Items
 const works = [
   {
     imgSrc: './images/project_1.png',

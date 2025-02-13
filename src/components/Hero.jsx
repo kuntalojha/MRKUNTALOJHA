@@ -1,8 +1,13 @@
 // Desc: Home Page Hero Section Component of the Portfolio Website.
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
 
 // Component
 import { ButtonOutline, ButtonPrimary } from './Button';
+// React Icons
 import { IoMdDownload } from 'react-icons/io';
 import { IoArrowDownOutline } from 'react-icons/io5';
 

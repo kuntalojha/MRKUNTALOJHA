@@ -1,9 +1,15 @@
+// Footer.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
 
 // Component
 import { ButtonPrimary } from './Button';
 import { FaChevronRight } from 'react-icons/fa6';
 
+// Sitemap
 const sitemap = [
   {
     label: 'Home',
@@ -31,6 +37,7 @@ const sitemap = [
   },
 ];
 
+// Socials
 const socials = [
   {
     label: 'GitHub',

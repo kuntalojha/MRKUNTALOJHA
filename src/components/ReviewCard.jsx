@@ -1,5 +1,12 @@
+// ReviewCard.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// React Icons
 import { IoStarSharp } from 'react-icons/io5';
 
 const ratings = new Array(5);

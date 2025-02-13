@@ -1,3 +1,8 @@
+// Desc: Navbar Component
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -23,6 +28,8 @@ const Navbar = ({ navOpen }) => {
     activeBox.current.style.width = event.target.offsetWidth + 'px';
     activeBox.current.style.height = event.target.offsetHeight + 'px';
   };
+
+  // Nav Items
   const navItems = [
     {
       label: 'Home',

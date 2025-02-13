@@ -1,5 +1,11 @@
+// About.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
 
+// About Items
 const aboutItems = [
   {
     label: 'Project done',

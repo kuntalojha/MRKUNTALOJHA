@@ -1,5 +1,11 @@
+// Contact.jsx
+// Name: KUNTAL OJHA
+// Date: 13-02-2025
+
+// Node modules
 import React from 'react';
 
+// Social Links
 const socialLinks = [
   {
     href: 'https://www.github.com/kuntalojha',
