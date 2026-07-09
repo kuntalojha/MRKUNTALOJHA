@@ -5,26 +5,32 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4 # Updated to latest version
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4 # Updated to latest version
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm ci
 
       - name: Build project
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v4 # Updated from v3 to v4
+        uses: actions/upload-artifact@v4
         with:
           name: production-files
           path: ./dist
@@ -33,22 +39,16 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4 # Updated from v3 to v4
+        uses: actions/download-artifact@v4
         with:
           name: production-files
           path: ./dist
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.GH_PAT }}  # Use your new PAT
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-
-      # - name: Deploy to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v4 # Updated from v3 to v4
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./dist
